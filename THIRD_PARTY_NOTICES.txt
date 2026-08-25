@@ -1,0 +1,76 @@
+Effekseer Object Plugin for AviUtl ExEdit2
+サードパーティ ソフトウェア 著作権表示
+
+本ソフトウェア(EffekseerObject.auf2)は、以下のオープンソースソフトウェアの
+コードを内部で利用・静的リンクしています。それぞれのライセンス条文の全文を
+以下に記載します。本ソフトウェア自体のライセンス条件については、
+同梱の LICENSE.txt をご参照ください。
+
+
+================================================================================
+1. Effekseer
+================================================================================
+本ソフトウェアは、パーティクルエフェクトの再生にEffekseerランタイム
+(コアライブラリおよびDirectX11レンダラー)を静的リンクしています。
+https://effekseer.github.io/
+
+The MIT License (MIT)
+
+Copyright (c) 2011 Effekseer Project
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+--------------------------------------------------------------------------------
+付記: Effekseerランタイム(DirectXバックエンド)のライセンスファイルには、
+歴史的経緯により以下の第三者コンポーネントの表記が含まれています。
+本ソフトウェアのビルド構成(コア + DirectX11レンダラーのみ、エディタ/ビューア/
+他バックエンドはすべて無効化)では実際にはリンクされていませんが、
+Effekseer側のライセンスファイルの記載に従い、参考として掲載します。
+
+DirectX Tool Kit
+https://directxtk.codeplex.com/
+Microsoft Public License (Ms-PL)
+
+
+================================================================================
+2. AviUtl ExEdit2 Plugin SDK
+================================================================================
+本ソフトウェアは、AviUtl ExEdit2向けプラグインを開発するための
+AviUtl ExEdit2 Plugin SDK(ヘッダファイル)を使用してビルドされています。
+
+The MIT License
+
+Copyright (c) 2025 Kenkun
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
