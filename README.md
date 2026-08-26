@@ -1,24 +1,36 @@
-# Effekseer Object Plugin for AviUtl ExEdit2
+# AviUtl ExEdit2 Plugins by Pio
+
+Iosys Pio制作の、AviUtl ExEdit2(AviUtl2)向けプラグイン群のバイナリ配布専用
+リポジトリです。
+
+**このリポジトリは、配布物(バイナリ)の公開専用です。ソースコードは含まれていません。**
+
+## プラグイン一覧
+
+### Effekseer Object Plugin
 
 AviUtl ExEdit2の拡張編集タイムライン上に、[Effekseer](https://effekseer.github.io/)で
 制作したパーティクルエフェクト(`.efk`ファイル)をオブジェクトとして配置し、
 再生・合成できるようにするプラグインです。
 
-**このリポジトリは、配布物(バイナリ)の公開専用です。ソースコードは含まれていません。**
+最新版は [Releases](../../releases) から `EffekseerObject-(バージョン).au2pkg.zip` をダウンロードしてください。
 
-## ダウンロード
+### Glb Object Plugin
 
-最新版は [Releases](../../releases) から `EffekseerObject.au2pkg.zip` をダウンロードしてください。
+AviUtl ExEdit2の拡張編集タイムライン上に、glTF Binary(`.glb`)/VRM(`.vrm`)/VCI(`.vci`)
+形式の静的3Dモデルをオブジェクトとして配置し、表示できるようにするプラグインです。
+
+最新版は [Releases](../../releases) から `GlbObject-(バージョン).au2pkg.zip` をダウンロードしてください。
 
 ## インストール方法
 
-1. ダウンロードした `EffekseerObject.au2pkg.zip` を、AviUtl ExEdit2のプレビュー画面に
+1. ダウンロードした `.au2pkg.zip` を、AviUtl ExEdit2のプレビュー画面に
    ドラッグ&ドロップしてください。
 2. インストール前に、本ソフトウェアのライセンス条件(無保証・再配布禁止など)が
    確認ダイアログに表示されます。内容にご同意いただける場合のみ、インストールを
    進めてください。
 
-詳しい使い方・動作環境・既知の制限事項は、zip内の `README.txt` をご覧ください。
+詳しい使い方・動作環境・既知の制限事項は、各zip内の `README.txt` をご覧ください。
 
 ## Effekseerとは
 
@@ -29,9 +41,9 @@ Effekseerは、ゲーム等で使われる無料のパーティクルエフェ�
 
 公式サイト: https://effekseer.github.io/
 
-## 対応するEffekseerバージョンについて
+### 対応するEffekseerバージョンについて(Effekseer Object Pluginのみ)
 
-本プラグインが内部で使用しているEffekseerランタイムは1.8系列(最新版)ですが、
+Effekseer Object Pluginが内部で使用しているEffekseerランタイムは1.8系列(最新版)ですが、
 動作確認はEffekseer 1.7系列で作成された`.efk`ファイル(VirtualCastが対応する範囲と
 同じ)に限定しています。1.8系列以降で追加された新機能を使用したエフェクトでの
 動作は未検証です。
@@ -44,9 +56,9 @@ Effekseerは、ゲーム等で使われる無料のパーティクルエフェ�
 
 詳細は [LICENSE.txt](./LICENSE.txt) をご確認ください。
 
-本ソフトウェアが内部で利用しているオープンソースソフトウェア(Effekseer、
-AviUtl ExEdit2 Plugin SDK、いずれもMIT License)の著作権表示は
-[THIRD_PARTY_NOTICES.txt](./THIRD_PARTY_NOTICES.txt) に記載しています。
+本ソフトウェア群が内部で利用しているオープンソースソフトウェア(Effekseer、
+cgltf、stb_image、DirectXMath、AviUtl ExEdit2 Plugin SDK、いずれもMIT License)の
+著作権表示は [THIRD_PARTY_NOTICES.txt](./THIRD_PARTY_NOTICES.txt) に記載しています。
 
 ## 作者
 

@@ -1,14 +1,16 @@
-Effekseer Object Plugin for AviUtl ExEdit2
+Iosys Pio制作 AviUtl ExEdit2向けプラグイン群
 サードパーティ ソフトウェア 著作権表示
 
-本ソフトウェア(EffekseerObject.auf2)は、以下のオープンソースソフトウェアの
-コードを内部で利用・静的リンクしています。それぞれのライセンス条文の全文を
-以下に記載します。本ソフトウェア自体のライセンス条件については、
-同梱の LICENSE.txt をご参照ください。
+本リポジトリで配布する各プラグイン(EffekseerObject.auf2 / GlbObject.auf2)は、
+以下のオープンソースソフトウェアのコードを内部で利用・静的リンクしています。
+それぞれのライセンス条文の全文を以下に記載します。本ソフトウェア自体の
+ライセンス条件については、同梱の LICENSE.txt をご参照ください。
+
+各項目の見出しに、どのプラグインで使用されているかを記載しています。
 
 
 ================================================================================
-1. Effekseer
+1. Effekseer  [EffekseerObject.auf2が使用]
 ================================================================================
 本ソフトウェアは、パーティクルエフェクトの再生にEffekseerランタイム
 (コアライブラリおよびDirectX11レンダラー)を静的リンクしています。
@@ -48,7 +50,127 @@ Microsoft Public License (Ms-PL)
 
 
 ================================================================================
-2. AviUtl ExEdit2 Plugin SDK
+2. cgltf  [GlbObject.auf2が使用]
+================================================================================
+本ソフトウェアは、glTF Binary(.glb)ファイルの解析にcgltf(シングルヘッダの
+C言語製glTFパーサ)を静的リンクしています。
+https://github.com/jkuhlmann/cgltf
+
+The MIT License (MIT)
+
+Copyright (c) 2018-2021 Johannes Kuhlmann
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+--------------------------------------------------------------------------------
+付記: cgltfはJSON解析処理として、以下のjsmnライブラリのコードを内部に
+組み込んでいます(cgltf.h内に同梱、個別ファイルとしてはリンクしていません)。
+https://github.com/zserge/jsmn
+
+The MIT License (MIT)
+
+Copyright (c) 2010 Serge A. Zaitsev
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+================================================================================
+3. stb_image  [GlbObject.auf2が使用]
+================================================================================
+本ソフトウェアは、テクスチャ画像(PNG/JPEG等)のデコードにstb_image
+(シングルヘッダの画像デコードライブラリ)を静的リンクしています。
+https://github.com/nothings/stb
+
+stb_imageはMITライセンスまたはパブリックドメイン(Unlicense)のいずれかを
+選択できるデュアルライセンスです。本ソフトウェアではMITライセンスの
+条文を掲載します。
+
+The MIT License (MIT)
+
+Copyright (c) 2017 Sean Barrett
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+================================================================================
+4. DirectXMath  [GlbObject.auf2が使用]
+================================================================================
+本ソフトウェアは、行列・ベクトル演算(カメラ・投影行列、頂点変換等)に
+DirectXMath(Windows SDK同梱のヘッダオンリー数学ライブラリ)を使用しています。
+https://github.com/microsoft/DirectXMath
+
+MIT License
+
+Copyright (c) Microsoft Corporation.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE
+
+
+================================================================================
+5. AviUtl ExEdit2 Plugin SDK  [EffekseerObject.auf2 / GlbObject.auf2 共通]
 ================================================================================
 本ソフトウェアは、AviUtl ExEdit2向けプラグインを開発するための
 AviUtl ExEdit2 Plugin SDK(ヘッダファイル)を使用してビルドされています。

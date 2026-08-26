@@ -1,10 +1,12 @@
-Effekseer Object Plugin for AviUtl ExEdit2
+Iosys Pio制作 AviUtl ExEdit2向けプラグイン群
 利用許諾契約書
 
 
 著作権者: Iosys Pio (以下「作者」)
-対象ソフトウェア: EffekseerObject.auf2 及び本パッケージに含まれる付属ファイル一式
-                  (以下「本ソフトウェア」)
+対象ソフトウェア:
+  - EffekseerObject.auf2 及び付属ファイル一式
+  - GlbObject.auf2 及び付属ファイル一式
+  (以下、これらを総称して「本ソフトウェア」)
 
 
 第1条(頒布形態)
@@ -62,9 +64,21 @@ Effekseer Object Plugin for AviUtl ExEdit2
 静的リンクしています。各ソフトウェアの著作権表示およびライセンス条文の
 全文は、同梱の THIRD_PARTY_NOTICES.txt をご参照ください。
 
+  [EffekseerObject.auf2が使用]
   - Effekseer (MIT License)
     Copyright (c) 2011 Effekseer Project
 
+  [GlbObject.auf2が使用]
+  - cgltf (MIT License)
+    Copyright (c) 2018-2021 Johannes Kuhlmann
+  - jsmn (MIT License、cgltf内部で使用するJSONパーサ)
+    Copyright (c) 2010 Serge A. Zaitsev
+  - stb_image (MIT License)
+    Copyright (c) 2017 Sean Barrett
+  - DirectXMath (MIT License)
+    Copyright (c) Microsoft Corporation
+
+  [EffekseerObject.auf2 / GlbObject.auf2 共通]
   - AviUtl ExEdit2 Plugin SDK (MIT License)
     Copyright (c) 2025 Kenkun
 
@@ -78,7 +92,9 @@ Effekseer Object Plugin for AviUtl ExEdit2
 第8条(契約の変更)
 
 作者は、将来の版において本許諾契約の内容を変更することがあります。
-変更後の許諾契約は、変更後に頒布される本ソフトウェアに適用されます。
+また、本リポジトリで新たなプラグインを配布する場合、対象ソフトウェア欄・
+第7条の記載を追加することがあります。変更後の許諾契約は、変更後に
+頒布される本ソフトウェアに適用されます。
 
 
 第9条(準拠法)
