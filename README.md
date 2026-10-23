@@ -67,4 +67,4 @@ Iosys Pio
 - https://piolabopages.pages.dev/tools/
 - X: [@iosysandpio](https://x.com/iosysandpio)
 - Bluesky: [@iospio.bsky.social](https://bsky.app/profile/iospio.bsky.social)
-- Misskey: [@pio@vcasskey.net](https://vcasskey.net/@pio)
+- Misskey: [@pio@misskey.cloud](https://misskey.cloud/@pio)
